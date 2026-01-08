@@ -1,27 +1,29 @@
 #pragma once
 #include <iostream>
 
-class LockFreeQueue {
+class LockFreeStack {
 	struct LFNode {
-		LFNode(int v) {
+		LFNode(int v, LFNode* prev) {
 			value = v;
+			pPrev = prev;
 		}
 		int value;
 		LFNode* pNext = nullptr;
+		LFNode* pPrev = nullptr;
 	};
 
 public:    
-	LockFreeQueue() = default;
-	~LockFreeQueue() = default;
+	LockFreeStack() = default;
+	~LockFreeStack() = default;
 
 	void Push(int value) {
 		while (true) {
-			if (m_pHead == nullptr)
+			if (m_pTail == nullptr)
 			{
-				auto p = new LFNode(value);
-				if (_InterlockedCompareExchange64((long long*)&m_pHead, (long long)p, 0) == 0)
+				auto p = new LFNode(value, nullptr);
+				if (_InterlockedCompareExchange64((long long*)&m_pTail, (long long)p, 0) == 0)
 				{
-					m_pTail = m_pHead;
+					m_pHead = m_pTail;
 					_InterlockedIncrement((long*)&m_count);
 					break;
 				}
@@ -29,7 +31,7 @@ public:
 			else
 			{
 				LFNode* pNode = m_pTail;
-				auto p = new LFNode(value);
+				auto p = new LFNode(value, pNode);
 				if (_InterlockedCompareExchange64((long long*)&m_pTail, (long long)p, (long long)pNode) == (long long)pNode)
 				{
 					pNode->pNext = p;
@@ -44,17 +46,17 @@ public:
 	int Pop() {
 		while (true)
 		{
-			if (m_pHead == nullptr)
+			if (m_pTail == nullptr)
 			{
 				return 0;
 			}
 			else
 			{
-				LFNode* pRet = m_pHead;
-				if (_InterlockedCompareExchange64((long long*)&m_pHead, (long long)pRet->pNext, (long long)pRet) == (long long)pRet)
+				LFNode* pRet = m_pTail;
+				if (_InterlockedCompareExchange64((long long*)&m_pTail, (long long)pRet->pPrev, (long long)pRet) == (long long)pRet)
 				{
-					if (m_pHead == nullptr) {
-						m_pTail = nullptr;
+					if (m_pTail == nullptr) {
+						m_pHead = nullptr;
 					}
 					int ret = pRet->value;
 					_InterlockedDecrement((long*) & m_count);
