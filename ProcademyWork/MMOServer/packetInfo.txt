@@ -1,0 +1,6 @@
+: Packet
+{	
+	PACKET_CHUNK 		: 1500
+	PACKET_NODE 		: 1000
+	BUFFER_SIZE 		: 80
+}

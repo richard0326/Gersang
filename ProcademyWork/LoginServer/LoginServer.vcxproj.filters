@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Global">
+      <UniqueIdentifier>{9bdbe0f2-7c55-49b9-8f3f-de95f9f2e46d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Lib">
+      <UniqueIdentifier>{f316b3f2-27d9-446e-967d-d98872763735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\main">
+      <UniqueIdentifier>{bfac8f01-8a91-4682-892e-290c24095ed9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일\main</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginServer.cpp">
+      <Filter>소스 파일\main</Filter>
+    </ClCompile>
+    <ClCompile Include="GameServer.cpp">
+      <Filter>소스 파일\main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketProc.cpp">
+      <Filter>소스 파일\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="MakePacket.cpp">
+      <Filter>소스 파일\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Library\NabzackoLib\RedisConnector.cpp">
+      <Filter>소스 파일\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Library\NabzackoLib\RingBuffer.cpp">
+      <Filter>소스 파일\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Library\NabzackoLib\SerializeBuffer.cpp">
+      <Filter>소스 파일\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Library\NabzackoLib\Synchronized.cpp">
+      <Filter>소스 파일\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Library\NabzackoLib\SystemLog.cpp">
+      <Filter>소스 파일\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Library\NabzackoLib\Util.cpp">
+      <Filter>소스 파일\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Library\NabzackoLib\CrashDump.cpp">
+      <Filter>소스 파일\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Library\NabzackoLib\DBConnector.cpp">
+      <Filter>소스 파일\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Library\NabzackoLib\NetServer.cpp">
+      <Filter>소스 파일\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Library\NabzackoLib\Parser.cpp">
+      <Filter>소스 파일\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Library\NabzackoLib\Profiler.cpp">
+      <Filter>소스 파일\Lib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LoginServer.h">
+      <Filter>소스 파일\main</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServer.h">
+      <Filter>소스 파일\main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketProc.h">
+      <Filter>소스 파일\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="MakePacket.h">
+      <Filter>소스 파일\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="defines.h">
+      <Filter>소스 파일\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonProtocol.h">
+      <Filter>소스 파일\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\RedisConnector.h">
+      <Filter>소스 파일\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\RingBuffer.h">
+      <Filter>소스 파일\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\SerializeBuffer.h">
+      <Filter>소스 파일\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\Singleton.h">
+      <Filter>소스 파일\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\Synchronized.h">
+      <Filter>소스 파일\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\SystemLog.h">
+      <Filter>소스 파일\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\Util.h">
+      <Filter>소스 파일\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\CrashDump.h">
+      <Filter>소스 파일\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\DBConnector.h">
+      <Filter>소스 파일\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\LockFreePool.h">
+      <Filter>소스 파일\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\LockFreeQueue.h">
+      <Filter>소스 파일\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\LockFreeStack.h">
+      <Filter>소스 파일\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\LockFreeTlsPoolA.h">
+      <Filter>소스 파일\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\NetServer.h">
+      <Filter>소스 파일\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\Orderedmap.h">
+      <Filter>소스 파일\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\Parser.h">
+      <Filter>소스 파일\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\Profiler.h">
+      <Filter>소스 파일\Lib</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
