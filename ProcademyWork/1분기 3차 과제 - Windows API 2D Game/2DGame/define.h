@@ -1,0 +1,211 @@
+#pragma once
+
+//-------------------------------------------
+// # define
+//-------------------------------------------
+
+/**
+ * player 이동 범위
+ */
+#define dfRANGE_MOVE_TOP		0
+#define dfRANGE_MOVE_LEFT		0
+#define dfRANGE_MOVE_RIGHT		6400
+#define dfRANGE_MOVE_BOTTOM		6400
+
+/** 
+ * 애니메이션 딜레이 횟수
+ */
+#define dfDELAY_STAND	8
+#define dfDELAY_MOVE	4
+#define dfDELAY_ATTACK1	4
+#define dfDELAY_ATTACK2	5
+#define dfDELAY_ATTACK3	5
+#define dfDELAY_EFFECT	4
+
+/**
+ * player 8방향 이동
+ */
+#define dfACTION_MOVE_LL		0
+#define dfACTION_MOVE_LU		1
+#define dfACTION_MOVE_UU		2
+#define dfACTION_MOVE_RU		3
+#define dfACTION_MOVE_RR		4
+#define dfACTION_MOVE_RD		5
+#define dfACTION_MOVE_DD		6
+#define dfACTION_MOVE_LD		7
+
+/**
+ * player 공격
+ */
+#define dfACTION_ATTACK1		8
+#define dfACTION_ATTACK2		9
+#define dfACTION_ATTACK3		10
+
+/**
+ * player 서 있기
+ */
+#define dfACTION_STAND			11
+
+/**
+ * 네트워크 define
+ */
+#define WM_NETWORK		WM_USER + 1
+
+//-------------------------------------------
+// enum
+//-------------------------------------------
+
+enum e_GLOBAL_INFO : int{
+	WINSIZE_X = 640,
+	WINSIZE_Y = 480,
+	WCHAR_LEN = 40,
+	FRAMEPERSECOND = 50,
+};
+
+enum e_OBJECT_TYPE : int {
+	eTYPE_PLAYER = 0,
+	eTYPE_EFFECT,
+};
+
+/**
+ * 애니메이션 구분 번호
+ */
+enum e_ANIMATION_INFO : int {
+	eAni_PLAYER_STAND_L = 0,
+	eAni_PLAYER_STAND_R,
+	eAni_PLAYER_MOVE_L,
+	eAni_PLAYER_MOVE_R,
+	eAni_PLAYER_ATTACK1_L,
+	eAni_PLAYER_ATTACK1_R,
+	eAni_PLAYER_ATTACK2_L,
+	eAni_PLAYER_ATTACK2_R,
+	eAni_PLAYER_ATTACK3_L,
+	eAni_PLAYER_ATTACK3_R,
+	eAni_PLAYER_ANIMATION_MAX,
+
+	eNum_EFFECT_SPACK,
+};
+
+/**
+ * bmp 스프라이트 구분 번호
+ */
+enum e_SPRITE_INFO : int {
+	
+	/**
+	 * 맵 스프라이트
+	 */
+	eMap = 0,
+
+	/**
+	 * 플레이어 스프라이트
+	 */
+	// 왼쪽을 향해 서 있다
+	ePLAYER_STAND_L01,
+	ePLAYER_STAND_L02,
+	ePLAYER_STAND_L03,
+	ePLAYER_STAND_L_MAX,
+
+	// 오른쪽을 향해 서 있다
+	ePLAYER_STAND_R01,
+	ePLAYER_STAND_R02,
+	ePLAYER_STAND_R03,
+	ePLAYER_STAND_R_MAX,
+
+	// 왼쪽을 향해 움직인다
+	ePLAYER_MOVE_L01,
+	ePLAYER_MOVE_L02,
+	ePLAYER_MOVE_L03,
+	ePLAYER_MOVE_L04,
+	ePLAYER_MOVE_L05,
+	ePLAYER_MOVE_L06,
+	ePLAYER_MOVE_L07,
+	ePLAYER_MOVE_L08,
+	ePLAYER_MOVE_L09,
+	ePLAYER_MOVE_L10,
+	ePLAYER_MOVE_L11,
+	ePLAYER_MOVE_L12,
+	ePLAYER_MOVE_L_MAX,
+
+	// 오른쪽을 향해 움직인다
+	ePLAYER_MOVE_R01,
+	ePLAYER_MOVE_R02,
+	ePLAYER_MOVE_R03,
+	ePLAYER_MOVE_R04,
+	ePLAYER_MOVE_R05,
+	ePLAYER_MOVE_R06,
+	ePLAYER_MOVE_R07,
+	ePLAYER_MOVE_R08,
+	ePLAYER_MOVE_R09,
+	ePLAYER_MOVE_R10,
+	ePLAYER_MOVE_R11,
+	ePLAYER_MOVE_R12,
+	ePLAYER_MOVE_R_MAX,
+
+	// 왼쪽을 향해 ATTACK1
+	ePLAYER_ATTACK1_L01,
+	ePLAYER_ATTACK1_L02,
+	ePLAYER_ATTACK1_L03,
+	ePLAYER_ATTACK1_L04,
+	ePLAYER_ATTACK1_L_MAX,
+
+	// 오른쪽을 향해 ATTACK1
+	ePLAYER_ATTACK1_R01,
+	ePLAYER_ATTACK1_R02,
+	ePLAYER_ATTACK1_R03,
+	ePLAYER_ATTACK1_R04,
+	ePLAYER_ATTACK1_R_MAX,
+
+	// 왼쪽을 향해 ATTACK2
+	ePLAYER_ATTACK2_L01,
+	ePLAYER_ATTACK2_L02,
+	ePLAYER_ATTACK2_L03,
+	ePLAYER_ATTACK2_L04,
+	ePLAYER_ATTACK2_L_MAX,
+
+	// 오른쪽을 향해 ATTACK2
+	ePLAYER_ATTACK2_R01,
+	ePLAYER_ATTACK2_R02,
+	ePLAYER_ATTACK2_R03,
+	ePLAYER_ATTACK2_R04,
+	ePLAYER_ATTACK2_R_MAX,
+
+	// 왼쪽을 향해 ATTACK3
+	ePLAYER_ATTACK3_L01,
+	ePLAYER_ATTACK3_L02,
+	ePLAYER_ATTACK3_L03,
+	ePLAYER_ATTACK3_L04,
+	ePLAYER_ATTACK3_L05,
+	ePLAYER_ATTACK3_L06,
+	ePLAYER_ATTACK3_L_MAX,
+
+	// 오른쪽을 향해 ATTACK3
+	ePLAYER_ATTACK3_R01,
+	ePLAYER_ATTACK3_R02,
+	ePLAYER_ATTACK3_R03,
+	ePLAYER_ATTACK3_R04,
+	ePLAYER_ATTACK3_R05,
+	ePLAYER_ATTACK3_R06,
+	ePLAYER_ATTACK3_R_MAX,
+
+	/**
+	 * UI 스프라이트
+	 */
+	// UI - EFFECT
+	eEFFECT_SPACK_01,
+	eEFFECT_SPACK_02,
+	eEFFECT_SPACK_03,
+	eEFFECT_SPACK_04,
+	eEFFECT_SPACK_MAX,
+
+	// UI - GUAGE_HP
+	eGUAGE_HP,
+
+	// UI - SHADOW
+	eSHADOW,
+
+	// Tile
+	eTILEMAP,
+
+	// 스프라이트 최대 개수
+	eSPRITE_MAX,
+};

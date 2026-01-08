@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client\Client.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\Server.vcxproj", "{14ECECB8-E1DE-43BA-B29F-96C4C07ED791}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemoryPoolTest", "MemoryPoolTest\MemoryPoolTest.vcxproj", "{E9F50530-ACAF-4473-ACA7-F18B90725AED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{14ECECB8-E1DE-43BA-B29F-96C4C07ED791}.Release|x64.Build.0 = Release|x64
 		{14ECECB8-E1DE-43BA-B29F-96C4C07ED791}.Release|x86.ActiveCfg = Release|Win32
 		{14ECECB8-E1DE-43BA-B29F-96C4C07ED791}.Release|x86.Build.0 = Release|Win32
+		{E9F50530-ACAF-4473-ACA7-F18B90725AED}.Debug|x64.ActiveCfg = Debug|x64
+		{E9F50530-ACAF-4473-ACA7-F18B90725AED}.Debug|x64.Build.0 = Debug|x64
+		{E9F50530-ACAF-4473-ACA7-F18B90725AED}.Debug|x86.ActiveCfg = Debug|Win32
+		{E9F50530-ACAF-4473-ACA7-F18B90725AED}.Debug|x86.Build.0 = Debug|Win32
+		{E9F50530-ACAF-4473-ACA7-F18B90725AED}.Release|x64.ActiveCfg = Release|x64
+		{E9F50530-ACAF-4473-ACA7-F18B90725AED}.Release|x64.Build.0 = Release|x64
+		{E9F50530-ACAF-4473-ACA7-F18B90725AED}.Release|x86.ActiveCfg = Release|Win32
+		{E9F50530-ACAF-4473-ACA7-F18B90725AED}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

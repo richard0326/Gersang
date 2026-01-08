@@ -1,0 +1,17 @@
+: AreaInfo
+{	
+	0 : "Map"
+	1 : "HPGuage"
+	2 : "Attack_1_L"
+	3 : "Attack_1_R"
+	4 : "Attack_2_L"
+	5 : "Attack_2_R"
+	6 : "Attack_3_L"
+	7 : "Attack_3_R"
+	8 : "Move_L"
+	9 : "Move_R"
+	10 : "Stand_L"
+	11 : "Stand_R"
+	12 : "Shadow"
+	13 : "xSpark"
+}

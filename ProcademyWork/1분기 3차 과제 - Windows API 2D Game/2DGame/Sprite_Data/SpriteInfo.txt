@@ -1,0 +1,171 @@
+
+: Map
+{	
+	Ani : 1
+	1 : "_Map.bmp"
+	CenterX : 0
+	CenterY : 0
+}
+
+: HPGuage
+{
+	Ani : 1	
+	1 : "HPGuage.bmp"
+	CenterX : 0
+	CenterY : 0
+}
+
+: Attack_1_L
+{
+	Ani : 4
+	1 : "Attack1_L_01.bmp"
+	2 : "Attack1_L_02.bmp"
+	3 : "Attack1_L_03.bmp"
+	4 : "Attack1_L_04.bmp"
+	CenterX : 71
+	CenterY : 90
+}
+
+: Attack_1_R
+{
+	Ani : 4
+	1 : "Attack1_R_01.bmp"
+	2 : "Attack1_R_02.bmp"
+	3 : "Attack1_R_03.bmp"
+	4 : "Attack1_R_04.bmp"
+	CenterX : 71
+	CenterY : 90
+}
+
+: Attack_2_L
+{
+	Ani : 4
+	1 : "Attack2_L_01.bmp"
+	2 : "Attack2_L_02.bmp"
+	3 : "Attack2_L_03.bmp"
+	4 : "Attack2_L_04.bmp"
+	CenterX : 71
+	CenterY : 90
+}
+
+: Attack_2_R
+{
+	Ani : 4
+	1 : "Attack2_R_01.bmp"
+	2 : "Attack2_R_02.bmp"
+	3 : "Attack2_R_03.bmp"
+	4 : "Attack2_R_04.bmp"
+	CenterX : 71
+	CenterY : 90
+}
+
+: Attack_3_L
+{
+	Ani : 6
+	1 : "Attack3_L_01.bmp"
+	2 : "Attack3_L_02.bmp"
+	3 : "Attack3_L_03.bmp"
+	4 : "Attack3_L_04.bmp"
+	5 : "Attack3_L_05.bmp"
+	6 : "Attack3_L_06.bmp"
+	CenterX : 71
+	CenterY : 90
+}
+
+: Attack_3_R
+{
+	Ani : 6
+	1 : "Attack3_R_01.bmp"
+	2 : "Attack3_R_02.bmp"
+	3 : "Attack3_R_03.bmp"
+	4 : "Attack3_R_04.bmp"
+	5 : "Attack3_R_05.bmp"
+	6 : "Attack3_R_06.bmp"
+	CenterX : 71
+	CenterY : 90
+}
+
+: Move_L
+{
+	Ani : 12
+	1 : "Move_L_01.bmp"
+	2 : "Move_L_02.bmp"
+	3 : "Move_L_03.bmp"
+	4 : "Move_L_04.bmp"
+	5 : "Move_L_05.bmp"
+	6 : "Move_L_06.bmp"
+	7 : "Move_L_07.bmp"
+	8 : "Move_L_08.bmp"
+	9 : "Move_L_09.bmp"
+	10 : "Move_L_10.bmp"
+	11 : "Move_L_11.bmp"
+	12 : "Move_L_12.bmp"
+	CenterX : 71
+	CenterY : 90
+}
+
+: Move_R
+{
+	Ani : 12
+	1 : "Move_R_01.bmp"
+	2 : "Move_R_02.bmp"
+	3 : "Move_R_03.bmp"
+	4 : "Move_R_04.bmp"
+	5 : "Move_R_05.bmp"
+	6 : "Move_R_06.bmp"
+	7 : "Move_R_07.bmp"
+	8 : "Move_R_08.bmp"
+	9 : "Move_R_09.bmp"
+	10 : "Move_R_10.bmp"
+	11 : "Move_R_11.bmp"
+	12 : "Move_R_12.bmp"
+	CenterX : 71
+	CenterY : 90
+}
+
+: Stand_L
+{
+	Ani : 3
+	1 : "Stand_L_01.bmp"
+	2 : "Stand_L_02.bmp"
+	3 : "Stand_L_03.bmp"
+	CenterX : 71
+	CenterY : 90
+}
+
+: Stand_R
+{
+	Ani : 3
+	1 : "Stand_R_01.bmp"
+	2 : "Stand_R_02.bmp"
+	3 : "Stand_R_03.bmp"
+	CenterX : 71
+	CenterY : 90
+}
+
+: Shadow
+{
+	Ani : 1
+	1 : "Shadow.bmp"
+	CenterX : 32
+	CenterY : 4
+}
+
+: xSpark
+{
+	Ani : 4
+	1 : "xSpark_1.bmp"
+	2 : "xSpark_2.bmp"
+	3 : "xSpark_3.bmp"
+	4 : "xSpark_4.bmp"
+	CenterX : 70
+	CenterY : 70
+}
+
+: Tile
+{
+	Ani : 1
+	1 : "Tile_01.bmp"
+	CenterX : 0
+	CenterY : 0
+}

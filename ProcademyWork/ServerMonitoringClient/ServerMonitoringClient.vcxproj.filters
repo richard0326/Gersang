@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ServerMonitoringClient">
+      <UniqueIdentifier>{013ad522-26b8-4aac-8926-c6b3e9765dbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerMonitoringClient\Global">
+      <UniqueIdentifier>{4605a4ec-1206-49f2-b6c1-5f92b2fc8476}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerMonitoringClient\Manager">
+      <UniqueIdentifier>{90934ab3-43e2-4029-ad1a-358a648eebaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerMonitoringClient\WinMain">
+      <UniqueIdentifier>{55de5da9-3b8f-4948-a284-61c37a9c895b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerMonitoringClient\MonitorWindows">
+      <UniqueIdentifier>{87f9358f-12cf-4a60-b112-a472c1b21e06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerMonitoringClient\Lib">
+      <UniqueIdentifier>{45a417e8-d885-493a-8d76-b6d95ceaebef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerMonitoringClient\MonitorInfo">
+      <UniqueIdentifier>{78cb7991-b53c-4909-bc2a-04e74c9ba628}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>ServerMonitoringClient\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>ServerMonitoringClient\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>ServerMonitoringClient\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerMonitoringClient.h">
+      <Filter>ServerMonitoringClient\WinMain</Filter>
+    </ClInclude>
+    <ClInclude Include="MonitorWindows.h">
+      <Filter>ServerMonitoringClient\MonitorWindows</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\Queue.h">
+      <Filter>ServerMonitoringClient\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="MonitorInfo.h">
+      <Filter>ServerMonitoringClient\MonitorInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\List.h">
+      <Filter>ServerMonitoringClient\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="defines.h">
+      <Filter>ServerMonitoringClient\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphInfo.h">
+      <Filter>ServerMonitoringClient\MonitorInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="MonitoringManager.h">
+      <Filter>ServerMonitoringClient\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\Singleton.h">
+      <Filter>ServerMonitoringClient\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\Util.h">
+      <Filter>ServerMonitoringClient\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\MemoryAllocMgr.h">
+      <Filter>ServerMonitoringClient\Lib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ServerMonitoringClient.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="ServerMonitoringClient.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ServerMonitoringClient.cpp">
+      <Filter>ServerMonitoringClient\WinMain</Filter>
+    </ClCompile>
+    <ClCompile Include="MonitorWindows.cpp">
+      <Filter>ServerMonitoringClient\MonitorWindows</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphInfo.cpp">
+      <Filter>ServerMonitoringClient\MonitorInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="MonitoringManager.cpp">
+      <Filter>ServerMonitoringClient\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\Util.cpp">
+      <Filter>ServerMonitoringClient\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\MemoryAllocMgr.cpp">
+      <Filter>ServerMonitoringClient\Lib</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ChattingServer">
+      <UniqueIdentifier>{a6f4e1d1-b949-4b1f-9330-a158ed734405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChattingServer\Lib">
+      <UniqueIdentifier>{3f6c12b5-0f8a-4d7e-a79d-6f1707b7b0a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChattingServer\Global">
+      <UniqueIdentifier>{a114e2c8-2afd-4e9b-8068-a24831773d4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChattingServer\User">
+      <UniqueIdentifier>{a0e01f0c-438f-4f2d-8a38-beeb9480188d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChattingServer\Packet">
+      <UniqueIdentifier>{eb65cc7e-2748-4602-be7b-0f36c8d55665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChattingServer\Room">
+      <UniqueIdentifier>{73105c0d-7897-4871-b176-efd926143c47}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SerializeBufferPacking.h">
+      <Filter>ChattingServer\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="SerializeBufferProc.h">
+      <Filter>ChattingServer\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ChattingServer\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol.h">
+      <Filter>ChattingServer\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet.h">
+      <Filter>ChattingServer\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="UserMgr.h">
+      <Filter>ChattingServer\User</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomMgr.h">
+      <Filter>ChattingServer\Room</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentContext.h">
+      <Filter>ChattingServer\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\RingBuffer.h">
+      <Filter>ChattingServer\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\SelectModel.h">
+      <Filter>ChattingServer\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Library\NabzackoLib\SerializeBuffer.h">
+      <Filter>ChattingServer\Lib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SerializeBufferPacking.cpp">
+      <Filter>ChattingServer\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="SerializeBufferProc.cpp">
+      <Filter>ChattingServer\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ChattingServer\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ChattingServer</Filter>
+    </ClCompile>
+    <ClCompile Include="Packet.cpp">
+      <Filter>ChattingServer\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="UserMgr.cpp">
+      <Filter>ChattingServer\User</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomMgr.cpp">
+      <Filter>ChattingServer\Room</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentContext.cpp">
+      <Filter>ChattingServer\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Library\NabzackoLib\RingBuffer.cpp">
+      <Filter>ChattingServer\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Library\NabzackoLib\SelectModel.cpp">
+      <Filter>ChattingServer\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Library\NabzackoLib\SerializeBuffer.cpp">
+      <Filter>ChattingServer\Lib</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
