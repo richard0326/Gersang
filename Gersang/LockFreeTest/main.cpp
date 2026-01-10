@@ -1,15 +1,15 @@
 #include "stdafx.h"
-#include "lockfree_stack.h"
+#include "lockfree_queue.h"
 
 using namespace std;
 
-LockFreeStack st;
+LockFreeQueue q;
 
 void PushThread(int a)
 {
 	for (int i = a; i < a + 100000; i++)
 	{
-		st.Push(i + 1);
+		q.Push(i + 1);
 	}
 }
 
@@ -17,7 +17,7 @@ void PopThread()
 {
 	for (int i = 0; i < 100000; i++)
 	{
-		int a = st.Pop();
+		int a = q.Pop();
 		if (a == 0) { // 비어 있는 경우
 			i--;
 			continue;
@@ -37,7 +37,7 @@ int main()
 	t3.join();
 	t4.join();
 
-	st.Print();
+	q.Print();
 
 	return 0;
 }

@@ -16,19 +16,19 @@ public:
 
 	void Push(int value) {
 		while (true) {
-			if (m_pHead == nullptr)
+			LFNode* pNode = m_pTail;
+			if (pNode == nullptr)
 			{
 				auto p = new LFNode(value);
-				if (_InterlockedCompareExchange64((long long*)&m_pHead, (long long)p, 0) == 0)
+				if (_InterlockedCompareExchange64((long long*)&m_pTail->pNext, (long long)p, 0) == 0)
 				{
-					m_pTail = m_pHead;
+					m_pHead = m_pTail;
 					_InterlockedIncrement((long*)&m_count);
 					break;
 				}
 			}
 			else
 			{
-				LFNode* pNode = m_pTail;
 				auto p = new LFNode(value);
 				if (_InterlockedCompareExchange64((long long*)&m_pTail, (long long)p, (long long)pNode) == (long long)pNode)
 				{
@@ -39,18 +39,18 @@ public:
 				delete p;
 			}
 		}
-		
 	}
+
 	int Pop() {
 		while (true)
 		{
-			if (m_pHead == nullptr)
+			LFNode* pRet = m_pHead;
+			if (pRet == nullptr)
 			{
 				return 0;
 			}
 			else
 			{
-				LFNode* pRet = m_pHead;
 				if (_InterlockedCompareExchange64((long long*)&m_pHead, (long long)pRet->pNext, (long long)pRet) == (long long)pRet)
 				{
 					if (m_pHead == nullptr) {
